@@ -1,0 +1,14 @@
+.body{
+    background-image:url("cine.jpg");
+}
+.nav{
+    background-color: black;
+    color: wheat;
+    text-decoration: solid;
+
+}
+.profile_img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20%;
+}

@@ -1,0 +1,40 @@
+<div class="container mb-5">
+<div class="container">
+    <h1>Bienvenido al Blog Cinefilo</h1>
+    <p>Escoge a que categoria deseas agregar tu Pelicula, Serie o Documental Favotiro</p>
+</div>
+
+
+<div class="container row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <%= image_tag 'peliculas.jpg', class:'profile_img' %>
+            <div class="card-body">
+                <h5 class="card-title">Peliculas</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+                <a href="/movie/new" class="btn btn-primary">Agregar Pelicula</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <%= image_tag 'series.png', class:'profile_img' %>
+            <div class="card-body">
+                <h5 class="card-title">Series</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+                <a href="/serie/new" class="btn btn-primary">Agregar Serie</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <%= image_tag 'documentales.png', class:'profile_img' %>
+            <div class="card-body">
+                <h5 class="card-title">Documentales</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+                <a href="/documental/new" class="btn btn-primary">Agregar Documental</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

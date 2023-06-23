@@ -1,0 +1,28 @@
+<div class="container">
+<h1>Bienvenidos al blog Cinefilo</h1>
+<p>En esta seccion podrás comentar brevemente y recomendarnos alguna de tus Documentales Favoritos</p>
+<%= form_with model: @documental, method: :post do |form| %>
+<div class="col-4">
+    <div>
+        <%= form.label :nombre, "Titulo del Documental", class: "form-label" %>
+        <%= form.text_field :nombre, class: "form-control" %>
+    </div>
+    <div>
+        <%= form.label :director, "Director", class: "form-label" %>
+        <%= form.text_field :director, class: "form-control" %>
+    </div>
+    <div>
+        <%= form.label :sinapsis, "Sinapsis", class: "form-label" %>
+        <%= form.text_area :sinapsis, class: "form-control", size: "70x5"  %>
+    </div>        
+</div>
+<div class="col-4">
+    <div class="mt-3">
+        <%= form.submit "Enviar", class: "btn btn-primary" %>
+    </div>
+</div>
+</div>
+
+
+</div>
+<% end %>
